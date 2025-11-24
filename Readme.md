@@ -2,7 +2,7 @@
 
 * Студент: [Дмитрий Лобов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2348959).
 * Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
-
+* Сайт: [Моя седона](https://dklobov.github.io/2348959-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
