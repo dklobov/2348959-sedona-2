@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий Лобов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2348959).
-* Наставник: [Виктория Никитина] (https://htmlacademy.ru/profile/id1217273)
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
 
 ---
 
