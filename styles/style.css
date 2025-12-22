@@ -70,8 +70,6 @@ body {
     left: 70px;
 }
 
-.sedona-image {}
-
 .nav-menu {
     display: flex;
     flex-wrap: wrap;
@@ -81,8 +79,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-.nav-menu-item {}
 
 .nav-menu-link {
     display: block;
@@ -189,8 +185,6 @@ body {
     margin: 0 auto;
 }
 
-.hero-image-divider {}
-
 .intro-header {
     font-size: 30px;
     line-height: 36px;
@@ -223,7 +217,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    /* margin: 0; */
     padding: 0;
 }
 
@@ -237,9 +230,6 @@ body {
     background-color: #82b3d3;
     color: #ffffff;
     width: 100%;
-}
-
-.description-box {
 }
 
 .description-item-image .description-box {
@@ -256,7 +246,6 @@ body {
 .description-item-image-no .description-box {
     display: flex;
     flex-direction: column;
-    /* flex-grow: 1; */
     align-items: center;
 
     width: 400px;
@@ -338,11 +327,6 @@ body {
 .description-item-image-no:nth-child(even) {
     background-color: rgba(131, 179, 211, 0.12);
 }
-
-/* .description-image {
-    display: block;
-    margin: auto 0;
-} */
 
 .services {
     text-align: center;
@@ -482,7 +466,6 @@ body {
 }
 
 .subscribe-header {
-    /* font-weight: 700; */
     font-size: 30px;
     line-height: 36px;
     text-align: center;
@@ -610,14 +593,6 @@ body {
     background-image: url("../images/icons/social-yt.svg");
 }
 
-.contacts-item.tg-item {
-    /* margin-left: 24px; */
-}
-
-.contacts-item.yt-item {
-    /* margin-left: 24px; */
-}
-
 .phone {
     text-align: center;
     margin: 0;
@@ -638,4 +613,62 @@ body {
 .htmlacademy-logo-image {
     text-decoration: none;
     margin-right: 70px;
+}
+
+.filter-container {
+    min-height: 412px;
+    background-image: url("../images/blur-filter-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.catalogue-header {
+    padding-top: 35px;
+    padding-left: 71px;
+}
+
+.catalogue-header-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color:#ffffff;
+
+    margin: 0;
+}
+
+.current-page-link {
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 20px;
+}
+
+.to-main {
+    background-image: url("../images/icons/to-index.svg");
+}
+
+.current-page {
+    display: flex;
+    list-style: none;
+}
+
+.current-page-link {
+    text-decoration: none;
+}
+
+.catalogue-filter-group {
+    border: none;
+}
+
+.catalogue-filter-list {
+    list-style: none;
+}
+
+.catalogue-filter-title {
+    list-style: none;
+}
+
+.catalogue-hotels-list-results {
+    list-style: none;
 }
