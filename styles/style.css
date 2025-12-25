@@ -641,7 +641,7 @@ body {
 
 .filter-container {
     min-height: 412px;
-    background-image: url("../images/blur-filter-image.jpg");
+    background-image: url("images/blur-filter-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding-left: 71px;
