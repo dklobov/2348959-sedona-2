@@ -345,13 +345,6 @@ body {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-
-
-
-
-
-
-
 .services {
     text-align: center;
 }
@@ -861,12 +854,23 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
+
+    -moz-appearance: textfield;
+
+    outline: none;
+}
+
+.cost-range-from::-webkit-outer-spin-button,
+.cost-range-from::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .cost-range-from::placeholder {
     font-size: 18px;
     line-height: 24px;
     text-align: right;
+    padding-right: 15px;
     font-weight: 400;
 }
 
@@ -874,6 +878,7 @@ body {
     font-size: 18px;
     line-height: 24px;
     text-align: right;
+    padding-right: 15px;
     font-weight: 400;
 }
 
@@ -891,6 +896,16 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
+
+    -moz-appearance: textfield;
+
+    outline: none;
+}
+
+.cost-range-to::-webkit-outer-spin-button,
+.cost-range-to::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .filter-buttons {
