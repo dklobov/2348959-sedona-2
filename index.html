@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона: Главная</title>
-    <link href="./styles/style.css" rel="stylesheet" >
+    <link href="./styles/style.css" rel="stylesheet">
+    <link rel="icon" href="./images/icons/favicon.png">
   </head>
 
   <body>
@@ -12,7 +13,7 @@
       <header class="header">
         <nav class="nav">
           <a class="sedona-link" href="#">
-            <img class="sedona-image" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип Седона">
+            <img class="sedona-image" src="./images/logo-sedona.svg" width="140" height="70" alt="Логотип Седона">
           </a>
 
           <ul class="nav-menu">
@@ -23,18 +24,18 @@
               <a class="nav-menu-link" href="#">О Седоне</a>
             </li>
             <li class="nav-menu-item">
-              <a class="nav-menu-link" href="catalogue.html">Гостиницы</a>
+              <a class="nav-menu-link" href="./catalogue.html">Гостиницы</a>
             </li>
           </ul>
 
           <ul class="user-menu">
             <li class="user-menu-item">
-              <a class="user-menu-link link-search" href="#">
+              <a class="user-menu-link link-search" href="./search.html">
                 <span class="visually-hidden">Поиск по сайту</span>
               </a>
             </li>
             <li class="user-menu-item">
-              <a class="user-menu-link link-fav" href="#">
+              <a class="user-menu-link link-fav" href="./favourite.html">
                 <span class="visually-hidden">Избранное</span>
                 <span class="fav-count">12</span>
               </a>
@@ -54,52 +55,63 @@
         </section>
 
         <section class="description">
+          <div class="description-slogan">
           <h2 class="visually-hidden">Почему вам надо в Седону</h2>
             <p class="intro-header">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
             <p class="intro-header-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
+
           <ul class="description-list">
-            <li class="description-item-image">
-              <div class="description-box">
-                <h3 class="description-title">Настоящий городок</h3>
-                <p class="description-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              </div>
-              <img class="description-image" src="images/photo-1-1.jpg" width="800" height="385"
-              alt="Панорама полей">
-            </li>
-            <li class="description-item-image-no">
+            <div class="tip-pic">
+              <li class="description-item">
+                <div class="description-box">
+                  <h3 class="description-title">Настоящий городок</h3>
+                  <p class="description-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
+              </li>
+              <li class="description-item">
+                <img class="description-image" src="images/photo-1-1.jpg" width="800" height="385" alt="Панорама полей">
+              </li>
+            </div>
+
+            <li class="description-item">
               <div class="description-box">
                 <h3 class="description-title">Небольшая площадь</h3>
                 <p class="description-text">Все достопримечательности находятся очень близко</p>
               </div>
               </li>
-            <li class="description-item-image-no">
+            <li class="description-item">
               <div class="description-box">
                 <h3 class="description-title">Красивая дорога</h3>
                 <p class="description-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
-            <li class="description-item-image-no">
+            <li class="description-item">
               <div class="description-box">
                 <h3 class="description-title">Мало туристов</h3>
                 <p class="description-text">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
-            <li class="description-item-image">
+            <div class="tip-pic">
+            <li class="description-item">
               <img class="description-image" src="images/photo-2-1.jpg" width="800" height="385" alt="Мост дьявола">
+            </li>
+            <li class="description-item">
               <div class="description-box">
                 <h3 class="description-title">Там есть мост дьявола</h3>
                 <p class="description-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
+          </div>
           </ul>
         </section>
 
         <section class="services">
-          <h2 class="visually-hidden">Список сервисных услуг</h2>
-            <h2 class="visually-hidden">Сервис и комфортные условия</h2>
+          <h2 class="visually-hidden">Сервис и комфортные условия</h2>
+          <div class="services-wrapper">
             <p class="services-header">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
             <p class="services-header-text">Опытный персонал и качественное обслуживание!</p>
-
+          </div>
           <ul class="services-list">
             <li class="services-item icon-house">
               <h3 class="services-title">Жильё</h3>
@@ -163,12 +175,10 @@
         </section>
         <section class="htmlacademy">
           <h2 class="visually-hidden">HTMLAcademy</h2>
-          <a class="htmlacademy-logo" href="https://htmlacademy.ru/" target="_blank">
-            <img class="htmlacademy-logo-image" src="images/logo-htmlacademy.svg" alt="HTMLacademy">
-          </a>
+          <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"></a>
         </section>
 
-      </div>
+        </div>
       </footer>
     </div>
   </body>
