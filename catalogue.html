@@ -56,7 +56,7 @@
               <li class="bread-crumbs-item">
                 <div class="next-crumb-wrapper">
                   <span class="arrow-right"></span>
-                  <a class="bread-crumbs-link last-crumb" href="" aria-label="текущая страница">Гостиницы</a>
+                  <a class="bread-crumbs-link last-crumb" href="#" aria-label="текущая страница">Гостиницы</a>
                 </div>
               </li>
             </ul>
@@ -111,8 +111,8 @@
                       <div class="cost-range-slider">
                         <span class="progress-bar-full"></span>
                         <span class="progress-bar-done"></span>
-                        <span class="cost-range-from-slider"></span>
-                        <span class="cost-range-to-slider"></span>
+                        <button class="cost-range-from-slider" type="button"></button>
+                        <button class="cost-range-to-slider" type="button"></button>
                       </div>
                   </fieldset>
                   <div class="filter-buttons">
@@ -130,26 +130,25 @@
             <div class="sort-price-visual">
               <select class="price-sort" name="price-sort" aria-label="Сортировка выдачи">
                 <option value="cheap-first">Сначала дешёвые</option>
-                <option value="cheap-first">Сначала дорогие</option>
-                <option value="cheap-first">Сначала популярные</option>
+                <option value="expensive-first">Сначала дорогие</option>
+                <option value="popular-first">Сначала популярные</option>
               </select>
               <ul class="view-sorter-list">
-                <li class="view-sorter-item sort-cards">
-                  <!-- current-view -->
-                  <a class="sort-cards-link" href="catalogue.html?view=tile">
+                <li class="view-sorter-item">
+                  <a class="sort-cards-link sort-cards current-sort" href="catalogue.html?view=tile">
                     <span class="visually-hidden">Показать карточки</span>
                   </a>
                 </li>
-                <!-- <li class="view-sorter-item">
-                  <a class="sort-big" href="catalogue.html?view=card">
+                <li class="view-sorter-item">
+                  <a class="sort-cards-link sort-big" href="catalogue.html?view=card">
                     <span class="visually-hidden">Показать карусель</span>
                   </a>
                 </li>
                 <li class="view-sorter-item">
-                  <a class="sort-list" href="catalogue.html?view=list">
+                  <a class="sort-cards-link sort-list" href="catalogue.html?view=list">
                     <span class="visually-hidden">Показать списком</span>
                   </a>
-                </li> -->
+                </li>
               </ul>
             </div>
           </div>
@@ -157,7 +156,9 @@
             <li class="hotel-card-item">
               <div class="hotel-card-link-wrapper">
                 <a class="hotel-card-image-link" href="">
-                  <img class="hotel-card-image" src="./images/hotels/amara-resort-spa.jpg" width="300" height="212" alt="Amara Resort & Spa">
+                  <div class="hover-hotel-image-wrapper">
+                    <img class="hotel-card-image" src="./images/hotels/amara-resort-spa.jpg" width="300" height="212" alt="Amara Resort & Spa">
+                  </div>
                 </a>
                 <a class="hotel-card-image-link" href="">
                   <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -183,7 +184,9 @@
             <li class="hotel-card-item">
               <div class="hotel-card-link-wrapper">
                 <a class="hotel-card-image-link" href="#">
-                  <img class="hotel-card-image" src="./images/hotels/villas-at-poco-diablo.jpg" width="300" height="212" alt="Amara Resort & Spa">
+                  <div class="hover-hotel-image-wrapper">
+                    <img class="hotel-card-image" src="./images/hotels/villas-at-poco-diablo.jpg" width="300" height="212" alt="Amara Resort & Spa">
+                  </div>
                 </a>
                 <a class="hotel-card-image-link" href="#">
                   <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
@@ -209,7 +212,9 @@
             <li class="hotel-card-item">
               <div class="hotel-card-link-wrapper">
                 <a class="hotel-card-image-link" href="#">
-                  <img class="hotel-card-image" src="./images/hotels/desert-quail-inn.jpg" width="300" height="212" alt="Amara Resort & Spa">
+                  <div class="hover-hotel-image-wrapper">
+                    <img class="hotel-card-image" src="./images/hotels/desert-quail-inn.jpg" width="300" height="212" alt="Amara Resort & Spa">
+                  </div>
                 </a>
                 <a class="hotel-card-image-link" href="#">
                   <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -234,7 +239,9 @@
             <li class="hotel-card-item">
               <div class="hotel-card-link-wrapper">
                 <a class="hotel-card-image-link" href="#">
-                  <img class="hotel-card-image" src="./images/hotels/greentree-inn.jpg" width="300" height="212" alt="Amara Resort & Spa">
+                  <div class="hover-hotel-image-wrapper">
+                    <img class="hotel-card-image" src="./images/hotels/greentree-inn.jpg" width="300" height="212" alt="Amara Resort & Spa">
+                  </div>
                 </a>
                 <a class="hotel-card-image-link" href="#">
                   <h3 class="hotel-card-title">GreenTree Inn</h3>
@@ -284,7 +291,7 @@
           <h2 class="subscribe-header hotels">Подпишитесь на рассылку</h2>
           <p class="subscribe-text hotels">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form flex-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="subscribe-email"></label>
+            <label class="visually-hidden" for="subscribe-email">Подписка на рассылку</label>
               <input class="form hotels" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
               <button class="subscription-button" type="submit">Подписаться</button>
           </form>
@@ -396,7 +403,7 @@
                   <li class="kids-count-item">
                     <div class="kids-tooltip-wrapper">
                       <p class="kids-count-title">Дети:</p>
-                      <span class="kids-tooltip-icon">i</span>
+                      <button class="kids-tooltip-icon">i</button>
                       <span class="tooltip-text">
                         Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                       </span>
@@ -429,6 +436,6 @@
       </div>
     </div>
 
-    <script src="../scripts/script.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
