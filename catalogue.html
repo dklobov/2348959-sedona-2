@@ -54,10 +54,7 @@
                 <a class="bread-crumbs-link to-main" href="index.html"></a>
               </li>
               <li class="bread-crumbs-item">
-                <div class="next-crumb-wrapper">
-                  <span class="arrow-right"></span>
-                  <a class="bread-crumbs-link last-crumb" href="#" aria-label="текущая страница">Гостиницы</a>
-                </div>
+                <a class="bread-crumbs-link last-crumb" href="#" aria-label="текущая страница">Гостиницы</a>
               </li>
             </ul>
           </header>
@@ -155,19 +152,19 @@
           <ul class="catalogue-hotels-list-results">
             <li class="hotel-card-item">
               <div class="hotel-card-link-wrapper">
-                <a class="hotel-card-image-link" href="">
+                <a class="hotel-card-image-link" href="#">
                   <div class="hover-hotel-image-wrapper">
                     <img class="hotel-card-image" src="./images/hotels/amara-resort-spa.jpg" width="300" height="212" alt="Amara Resort & Spa">
                   </div>
                 </a>
-                <a class="hotel-card-image-link" href="">
+                <a class="hotel-card-image-link" href="#">
                   <h3 class="hotel-card-title">Amara Resort & Spa</h3>
                 </a>
               </div>
               <div class="grid-buttons">
                 <div class="type-price-wrapper">
                   <span class="hotel-type">Гостиница</span>
-                  <span class="hotel-price">От 4000 &#8381</span>
+                  <span class="hotel-price">От 4000 &#8381;</span>
                 </div>
                 <a class="hotel-card-button" href="#">Подробнее</a>
                 <button class="hotel-card-button to-fav" type="button">В избранное</button>
@@ -195,7 +192,7 @@
               <div class="grid-buttons">
                 <div class="type-price-wrapper">
                   <span class="hotel-type">Гостиница</span>
-                  <span class="hotel-price">От 5000 &#8381</span>
+                  <span class="hotel-price">От 5000 &#8381;</span>
                 </div>
                 <a class="hotel-card-button" href="#">Подробнее</a>
                 <button class="hotel-card-button at-fav" type="button">В избранном</button>
@@ -223,7 +220,7 @@
               <div class="grid-buttons">
                 <div class="type-price-wrapper">
                   <span class="hotel-type">Гостиница</span>
-                  <span class="hotel-price">От 2500 &#8381</span>
+                  <span class="hotel-price">От 2500 &#8381;</span>
                 </div>
                 <a class="hotel-card-button" href="#">Подробнее</a>
                 <button class="hotel-card-button to-fav" type="button">В избранное</button>
@@ -250,7 +247,7 @@
               <div class="grid-buttons">
                 <div class="type-price-wrapper">
                   <span class="hotel-type">Гостиница</span>
-                  <span class="hotel-price">От 1500 &#8381</span>
+                  <span class="hotel-price">От 1500 &#8381;</span>
                 </div>
                 <a class="hotel-card-button" href="#">Подробнее</a>
                 <button class="hotel-card-button to-fav" type="button">В избранное</button>
@@ -265,7 +262,7 @@
           </ul>
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link current-link">1</a>
+              <a class="pagination-link current-link" href="#">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -277,7 +274,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link no-link">...</a>
+              <a class="pagination-link no-link" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
@@ -352,88 +349,6 @@
           </section>
         </div>
       </footer>
-    </div>
-
-    <div class="modal modal-closed">
-      <div class="modal-wrapper">
-        <button class="modal-close-button" type="button">
-          <span class="visually-hidden">Закрыть модальное окно</span>
-        </button>
-        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <form class="order-search" method="get" action="https://echo.htmlacademy.ru/">
-            <ul class="order-filters">
-              <li class="order-filters-checkin">
-                <p class="date-title">Дата заезда:</p>
-                <div class="checkin-wrapper">
-                  <input class="checkin-date" type="text" id="checkin-date" name="checkin-date" placeholder="27 апреля 2020" required>
-                  <label for="checkin-date" class="checking-icon"></label>
-                  <span class="checkin-validation">Мы не можем отправить вас в прошлое.</span>
-                </div>
-              </li>
-              <li class="order-filters-checkout">
-                <p class="date-title">Дата Выезда:</p>
-                <div class="checkout-wrapper">
-                  <input class="checkout-date" type="text" id="checkout-date" name="checkin-date" placeholder="1 сентября 2023" required>
-                  <label for="checkout-date" class="checking-icon"></label>
-                  <span class="checkout-validation">На эти даты есть свободные номера. Пока есть.</span>
-                </div>
-              </li>
-              <li class="guests-count">
-                <ul class="guests-count-list">
-                  <li class="adults-count-item">
-                    <p class="adults-count-title">Взрослые:</p>
-                    <div class="adults-wrapper">
-                      <button class="adults-minus" type="button" aria-label="Уменьшить" href="#">
-                        <div class="minus-wrapper">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
-                          </svg>
-                        </div>
-                      </button>
-                      <input class="adults-count" type="number" id="adults-count" name="adults-count" placeholder="2" min="1" step="1" required>
-                      <button class="adults-plus" type="button" aria-label="Увеличить"href="#">
-                        <div class="plus-wrapper">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
-                          </svg>
-                        </div>
-                      </button>
-                    </div>
-                  </li>
-                  <li class="kids-count-item">
-                    <div class="kids-tooltip-wrapper">
-                      <p class="kids-count-title">Дети:</p>
-                      <button class="kids-tooltip-icon">i</button>
-                      <span class="tooltip-text">
-                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                      </span>
-                    </div>
-                    <div class="kids-wrapper">
-                      <button class="kids-minus" type="button" aria-label="Уменьшить" href="#">
-                        <div class="minus-wrapper">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
-                          </svg>
-                        </div>
-                      </button>
-                      <input class="kids-count" type="number" id="kids-count" name="kids-count" placeholder="2" min="0" step="1" required>
-                      <button class="kids-plus" type="button" aria-label="Увеличить"href="#">
-                        <div class="plus-wrapper">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
-                          </svg>
-                        </div>
-                      </button>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li class="modal-search-button">
-                <button class="search-hotel" href="#">найти</button>
-              </li>
-            </ul>
-          </form>
-      </div>
     </div>
 
     <script src="./scripts/script.js"></script>

@@ -62,24 +62,19 @@
           </div>
 
           <ul class="description-list">
-            <div class="tip-pic">
-              <li class="description-item">
-                <div class="description-box">
-                  <h3 class="description-title">Настоящий городок</h3>
-                  <p class="description-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                </div>
-              </li>
-              <li class="description-item">
-                <img class="description-image" src="images/photo-1-1.jpg" width="800" height="385" alt="Панорама полей">
-              </li>
-            </div>
-
+            <li class="description-item spec-item">
+              <div class="description-box">
+                <h3 class="description-title">Настоящий городок</h3>
+                <p class="description-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+               <img class="description-image" src="images/photo-1-1.jpg" width="800" height="385" alt="Панорама полей">
+            </li>
             <li class="description-item">
               <div class="description-box">
                 <h3 class="description-title">Небольшая площадь</h3>
                 <p class="description-text">Все достопримечательности находятся очень близко</p>
               </div>
-              </li>
+            </li>
             <li class="description-item">
               <div class="description-box">
                 <h3 class="description-title">Красивая дорога</h3>
@@ -92,17 +87,13 @@
                 <p class="description-text">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
-            <div class="tip-pic">
-            <li class="description-item">
-              <img class="description-image" src="images/photo-2-1.jpg" width="800" height="385" alt="Мост дьявола">
-            </li>
-            <li class="description-item">
+            <li class="description-item spec-item">
+               <img class="description-image" src="images/photo-2-1.jpg" width="800" height="385" alt="Мост дьявола">
               <div class="description-box">
                 <h3 class="description-title">Там есть мост дьявола</h3>
                 <p class="description-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
-          </div>
           </ul>
         </section>
 
@@ -132,7 +123,7 @@
           <h2 class="visually-hidden">Подбор бронирования</h2>
           <p class="search-header">Заинтересовались?</p>
           <p class="search-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="button-search" href="catalogue.html">Поиск гостиницы в Седоне</button>
+          <button class="button-search" type="button">Поиск гостиницы в Седоне</button>
         </section>
       </main>
 
@@ -216,18 +207,16 @@
           <form class="order-search" method="get" action="https://echo.htmlacademy.ru/">
             <ul class="order-filters">
               <li class="order-filters-checkin">
-                <p class="date-title">Дата заезда:</p>
+                <label for="checkin-date" class="date-title">Дата заезда:</label>
                 <div class="checkin-wrapper">
-                  <input class="checkin-date" type="text" id="checkin-date" name="checkin-date" placeholder="27 апреля 2020" required>
-                  <label for="checkin-date" class="checking-icon"></label>
+                  <input class="checkin-date" type="text" id="checkin-date" name="checkin-date" value="27 апреля 2020" required>
                   <span class="checkin-validation">Мы не можем отправить вас в прошлое.</span>
                 </div>
               </li>
               <li class="order-filters-checkout">
-                <p class="date-title">Дата Выезда:</p>
+                <label for="checkout-date" class="date-title">Дата Выезда:</label>
                 <div class="checkout-wrapper">
-                  <input class="checkout-date" type="text" id="checkout-date" name="checkin-date" placeholder="1 сентября 2023" required>
-                  <label for="checkout-date" class="checking-icon"></label>
+                  <input class="checkout-date" type="text" id="checkout-date" name="checkin-date" value="1 сентября 2023" required>
                   <span class="checkout-validation">На эти даты есть свободные номера. Пока есть.</span>
                 </div>
               </li>
@@ -236,20 +225,16 @@
                   <li class="adults-count-item">
                     <p class="adults-count-title">Взрослые:</p>
                     <div class="adults-wrapper">
-                      <button class="adults-minus" type="button" aria-label="Уменьшить" href="#">
-                        <div class="minus-wrapper">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
-                          </svg>
-                        </div>
+                      <button class="adults-minus" type="button" aria-label="Уменьшить">
+                        <svg class="minus-absolute" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
+                        </svg>
                       </button>
                       <input class="adults-count" type="number" id="adults-count" name="adults-count" placeholder="2" min="1" step="1" required>
-                      <button class="adults-plus" type="button" aria-label="Увеличить"href="#">
-                        <div class="plus-wrapper">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <button class="adults-plus" type="button" aria-label="Увеличить">
+                        <svg class="plus-absolute" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
-                          </svg>
-                        </div>
+                        </svg>
                       </button>
                     </div>
                   </li>
@@ -262,27 +247,23 @@
                       </span>
                     </div>
                     <div class="kids-wrapper">
-                      <button class="kids-minus" type="button" aria-label="Уменьшить" href="#">
-                        <div class="minus-wrapper">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
-                          </svg>
-                        </div>
+                      <button class="kids-minus" type="button" aria-label="Уменьшить">
+                        <svg class="minus-absolute" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
+                        </svg>
                       </button>
                       <input class="kids-count" type="number" id="kids-count" name="kids-count" placeholder="2" min="0" step="1" required>
-                      <button class="kids-plus" type="button" aria-label="Увеличить"href="#">
-                        <div class="plus-wrapper">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <button class="kids-plus" type="button" aria-label="Увеличить">
+                        <svg class="plus-absolute" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
-                          </svg>
-                        </div>
+                        </svg>
                       </button>
                     </div>
                   </li>
                 </ul>
               </li>
               <li class="modal-search-button">
-                <button class="search-hotel" href="#">найти</button>
+                <button class="search-hotel" type="submit">найти</button>
               </li>
             </ul>
           </form>
