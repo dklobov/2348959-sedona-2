@@ -1590,12 +1590,6 @@ input:focus + label::before {
   outline: none;
 }
 
-.pagination-link:focus.current-link {
-  background-color: #f2f2f2;
-  outline: none;
-  border: none;
-}
-
 .pagination-link:active {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
@@ -1612,12 +1606,6 @@ input:focus + label::before {
   background-color: transparent;
   color: #000000;
   pointer-events: none;
-}
-
-.pagination-link:focus.no-link {
-  background-color: transparent;
-  border-color: transparent;
-  outline: none;
 }
 
 .pagination::before {
