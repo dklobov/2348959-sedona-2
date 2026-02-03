@@ -1239,13 +1239,17 @@ input:focus + label::before {
   text-decoration: none;
 }
 
-.sort-cards-link:hover,
-.sort-cards-link:active {
+.sort-cards-link:hover {
   border: 2px solid #000000;
 }
 
 .sort-cards-link:focus {
   border: 2px solid #68a2ca;
+  outline: none;
+}
+
+.sort-cards-link:active {
+  border: 2px solid #000000;
   outline: none;
 }
 
@@ -1271,19 +1275,6 @@ input:focus + label::before {
 
 .current-sort {
   border: 2px solid #000000;
-}
-
-.button-visual-sort:hover {
-  border-color: #000000;
-}
-
-.button-visual-sort:focus {
-  border: 2px solid #68a2ca;
-  outline: none;
-}
-
-.button-visual-sort:active {
-  border: 2px solid #68a2ca;
 }
 
 .price-sort {
