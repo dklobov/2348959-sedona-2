@@ -102,8 +102,10 @@
                   <fieldset class="cost-range-select">
                     <legend class="cost-range-title">Стоимость, ₽:</legend>
                       <div class="cost-range">
-                        <input class="cost-range-from" type="number" name="min-value" value="0" min="0" required>
-                        <input class="cost-range-to" type="number" name="max-value" value="9000" min="0" required>
+                        <label class="visually-hidden" for="cost-range-from">Цена от</label>
+                        <input class="cost-range-from" type="number" id="cost-range-from" name="min-value" value="0" min="0" required>
+                        <label class="visually-hidden" for="cost-range-to">Цена до</label>
+                        <input class="cost-range-to" type="number" id="cost-range-to" name="max-value" value="9000" min="0" required>
                       </div>
                       <div class="cost-range-slider">
                         <span class="progress-bar-full"></span>
